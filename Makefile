@@ -141,7 +141,7 @@ test-all-valgrind: test-build
 
 test-ci: | build-addons
 	$(PYTHON) tools/test.py -p tap --logfile test.tap --mode=release \
-		addons message parallel sequential
+		addons message internet parallel sequential
 
 test-release: test-build
 	$(PYTHON) tools/test.py --mode=release
